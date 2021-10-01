@@ -1,17 +1,18 @@
 <template>
   <v-app>
-    <v-main>
-      <v-container fluid class="black">
-        <img src="../public/logo.png" alt="Logo" width="25%">
-        <p class="text-h2 text-center"></p>
-      </v-container>
-    </v-main>
+    <LogoBar />   
   </v-app>
 </template>
 
 <script>
+import LogoBar from '@/components/LogoBar.vue';
+
 export default {
   name: 'App',
   data: () => ({}),
+
+  components: {
+    LogoBar,
+  },
 };
 </script>
