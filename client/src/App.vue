@@ -23,6 +23,10 @@ export default {
     CarCards,
   },
 
+  created () {
+    this.getCars();
+  },
+
   methods: {
     async getCars() {
       try {
